@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="7" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
-        <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element label="Requested for" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Requested for email" mandatory="true" max_length="40" name="u_requested_for_email" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
+                <element label="0befe1dedb931300a053e04a48961910" sequence="0" value="0befe1dedb931300a053e04a48961910"/>
+                <element label="14e969dadb931300a053e04a48961931" sequence="0" value="14e969dadb931300a053e04a48961931"/>
+                <element label="1b9f21dedb931300a053e04a4896190f" sequence="0" value="1b9f21dedb931300a053e04a4896190f"/>
+                <element label="253fe99edb931300a053e04a48961931" sequence="0" value="253fe99edb931300a053e04a48961931"/>
+                <element label="37e8ed9adb931300a053e04a489619c1" sequence="0" value="37e8ed9adb931300a053e04a489619c1"/>
+                <element label="3a31fddedb931300a053e04a489619bd" sequence="0" value="3a31fddedb931300a053e04a489619bd"/>
+                <element label="8b5ee19edb931300a053e04a48961969" sequence="0" value="8b5ee19edb931300a053e04a48961969"/>
+                <element label="94b7a19adb931300a053e04a489619d9" sequence="0" value="94b7a19adb931300a053e04a489619d9"/>
+                <element label="9ce0f9dedb931300a053e04a48961963" sequence="0" value="9ce0f9dedb931300a053e04a48961963"/>
+                <element label="a99de95edb931300a053e04a489619bc" sequence="0" value="a99de95edb931300a053e04a489619bc"/>
+                <element label="bb6925dadb931300a053e04a48961958" sequence="0" value="bb6925dadb931300a053e04a48961958"/>
+                <element label="d898a99adb931300a053e04a489619d8" sequence="0" value="d898a99adb931300a053e04a489619d8"/>
                 <element label="Human Resources" sequence="0" value="hr"/>
                 <element label="Facilities" sequence="1" value="facilities"/>
                 <element label="Legal" sequence="2" value="legal"/>
@@ -13,7 +25,10 @@
         </element>
         <element attributes="edge_encryption_enabled=true" choice="3" default="hr1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
             <choice>
+                <element label="Facilities" sequence="0" value="Facilities"/>
+                <element label="Human Resources" sequence="0" value="Human Resources"/>
                 <element label="Human Resources 1" sequence="0" value="hr1"/>
+                <element label="Legal" sequence="0" value="Legal"/>
                 <element label="Human Resources 2" sequence="1" value="hr2"/>
                 <element label="Facilities 1" sequence="2" value="facilities1"/>
                 <element label="Facilities 2" sequence="3" value="facilities2"/>
